@@ -1,1 +1,2 @@
-# chai
+# Chai to Judaism
+## A blog
