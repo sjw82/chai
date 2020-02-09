@@ -1,0 +1,96 @@
+/* https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp for more info on styling dropdown buttons */
+
+body {
+    font-family: 'Muli', sans-serif;
+    }
+
+/* Navigation Section */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: solid black 3px;
+    overflow: hidden;
+}
+.navbar > a {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    font-size: 16px;
+}
+.dropdown {
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  /*color: white;/*
+  padding: 14px 16px
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  */
+  z-index: 1;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Header Section */
+.header {
+    text-align: center;
+}
+h1 {
+    font-size: 5vw;
+}
+h2 {
+    font-size: 3vw;
+}
+
+/* Body Section */
+.content {
+    /* display: flex;
+    justify-content: space-between;
+    height: 200%;*/
+}
+.leftcolumn{
+    float: left;
+    border: solid black 3px;
+    width: 50%;
+    height: 100%;
+}
+.rightcolumn{
+    float: left;
+    border: solid black 3px;
+    width: 45%;
+    height: 100%;
+}
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+.artcol1 {
+    float: left;
+    width: 50%;
+}
+.artcol2 {
+    float: right;
+    width: 50%;
+}
+.article {
+    border: solid black 1px;
+    padding: 10px;
+}
+
+/* Footer Section */
